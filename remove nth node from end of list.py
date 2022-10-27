@@ -13,7 +13,7 @@ class Solution:
         fast, slow = head, head
         for i in range(n):
             fast = fast.next
-        if not fast:
+        if fast is None:
             return head.next
         while fast.next:
             fast, slow = fast.next, slow.next
